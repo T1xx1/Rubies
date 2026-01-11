@@ -1,0 +1,13 @@
+{
+  "itemGroup.rubies": "Example Mod Tab",
+  "block.rubies.example_block": "Example Block",
+  "item.rubies.example_item": "Example Item",
+
+  "rubies.configuration.title": "Rubies Configs",
+  "rubies.configuration.section.rubies.common.toml": "Rubies Configs",
+  "rubies.configuration.section.rubies.common.toml.title": "Rubies Configs",
+  "rubies.configuration.items": "Item List",
+  "rubies.configuration.logDirtBlock": "Log Dirt Block",
+  "rubies.configuration.magicNumberIntroduction": "Magic Number Text",
+  "rubies.configuration.magicNumber": "Magic Number"
+}
