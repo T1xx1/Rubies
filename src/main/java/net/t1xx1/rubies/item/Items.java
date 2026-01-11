@@ -16,6 +16,9 @@ public class Items {
 
     /* */
 
+    public static final DeferredItem<Item> RUBY = ITEMS.register("ruby", () -> new Item(new Item.Properties()));
+
     public static void addCreative(BuildCreativeModeTabContentsEvent event) {
+        event.accept(RUBY);
     }
 }

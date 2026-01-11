@@ -5,5 +5,7 @@
   "rubies.configuration.items": "Item List",
   "rubies.configuration.logDirtBlock": "Log Dirt Block",
   "rubies.configuration.magicNumberIntroduction": "Magic Number Text",
-  "rubies.configuration.magicNumber": "Magic Number"
+  "rubies.configuration.magicNumber": "Magic Number",
+
+  "item.rubies.ruby": "Ruby"
 }
