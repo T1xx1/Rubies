@@ -34,13 +34,8 @@ public class Rubies {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            Items.addCreative(event);
-        }
-
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            Blocks.addCreative(event);
-        }
+        Items.addCreative(event);
+        Blocks.addCreative(event);
     }
 
     @SubscribeEvent
