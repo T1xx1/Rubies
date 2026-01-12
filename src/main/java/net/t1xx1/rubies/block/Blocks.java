@@ -35,6 +35,9 @@ public class Blocks {
         return b;
     }
 
+    public static final DeferredBlock<Block> RUBY_BLOCK = registerBlock("ruby_block", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.EMERALD).instrument(NoteBlockInstrument.BIT).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+
     public static void addCreative(BuildCreativeModeTabContentsEvent event) {
+        event.accept(RUBY_BLOCK);
     }
 }

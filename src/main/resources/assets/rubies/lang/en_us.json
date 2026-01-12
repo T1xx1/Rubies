@@ -7,5 +7,7 @@
   "rubies.configuration.magicNumberIntroduction": "Magic Number Text",
   "rubies.configuration.magicNumber": "Magic Number",
 
-  "item.rubies.ruby": "Ruby"
+  "item.rubies.ruby": "Ruby",
+
+  "block.rubies.ruby_block": "Block of Ruby"
 }
