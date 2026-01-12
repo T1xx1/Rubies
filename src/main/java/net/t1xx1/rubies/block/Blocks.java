@@ -1,6 +1,5 @@
 package net.t1xx1.rubies.block;
 
-import jdk.jfr.Description;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
