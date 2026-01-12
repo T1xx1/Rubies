@@ -1,0 +1,40 @@
+package net.t1xx1.rubies.block;
+
+import jdk.jfr.Description;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.t1xx1.rubies.Rubies;
+import net.t1xx1.rubies.item.Items;
+
+import java.util.function.Supplier;
+
+public class Blocks {
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Rubies.MODID);
+
+    public static void register(IEventBus eventBus) {
+        BLOCKS.register(eventBus);
+    }
+
+    /* */
+
+    public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
+        DeferredBlock<T> b = BLOCKS.register(name, block);
+
+        /* register block item */
+        Items.ITEMS.register(name, () -> new BlockItem(b.get(), new Item.Properties()));
+
+        return b;
+    }
+
+    public static void addCreative(BuildCreativeModeTabContentsEvent event) {
+    }
+}
