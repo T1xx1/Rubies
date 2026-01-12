@@ -1,7 +1,9 @@
 package net.t1xx1.rubies.block;
 
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -41,11 +43,13 @@ public class Blocks {
     public static final DeferredBlock<Block> RUBY_BLOCK = registerBlock("ruby_block", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.EMERALD).instrument(NoteBlockInstrument.BIT).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
 
     public static void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+        ResourceKey<CreativeModeTab> tab = event.getTabKey();
+
+        if (tab == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(RUBY_BLOCK);
         }
 
-        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+        if (tab == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(RUBY_ORE);
         }
     }
