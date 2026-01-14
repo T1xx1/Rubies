@@ -24,7 +24,9 @@ public class DataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = lookupProvider = event.getLookupProvider();
 
-        generator.addProvider(event.includeServer(), new BlockStateProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(BlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
+
+        generator.addProvider(event.includeClient(), new ItemModelProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new BlockStateProvider(packOutput, existingFileHelper));
     }
 }
