@@ -14,7 +14,7 @@
           "name": "rubies:ruby_block"
         }
       ],
-      "rolls":  1.0
+      "rolls": 1.0
     }
   ],
   "random_sequence": "rubies:blocks/ruby_block"

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:alternatives",
-          "children" : [
+          "children": [
             {
               "type": "minecraft:item",
               "conditions": [
@@ -45,7 +45,7 @@
           ]
         }
       ],
-      "rolls":  1.0
+      "rolls": 1.0
     }
   ],
   "random_sequence": "rubies:blocks/deepslate_ruby_ore"
