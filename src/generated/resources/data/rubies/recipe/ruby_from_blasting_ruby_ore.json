@@ -1,13 +1,14 @@
 {
-  "type": "minecraft:smelting",
+  "type": "minecraft:blasting",
   "category": "misc",
-  "cookingtime": 200,
+  "cookingtime": 100,
   "experience": 1.0,
   "group": "ruby",
   "ingredient": {
     "item": "rubies:ruby_ore"
   },
   "result": {
+    "count": 1,
     "id": "rubies:ruby"
   }
 }
