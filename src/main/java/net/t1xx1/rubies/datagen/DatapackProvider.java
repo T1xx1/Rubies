@@ -16,6 +16,6 @@ public class DatapackProvider extends DatapackBuiltinEntriesProvider {
             .add(Registries.TRIM_MATERIAL, TrimMaterials::bootstrap);
 
     public DatapackProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, BUILDER, Set.of(Rubies.MODID));
+        super(output, registries, BUILDER, Set.of(Rubies.MOD_ID));
     }
 }

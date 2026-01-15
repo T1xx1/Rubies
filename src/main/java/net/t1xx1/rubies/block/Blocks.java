@@ -22,7 +22,7 @@ import net.t1xx1.rubies.item.Items;
 import java.util.function.Supplier;
 
 public class Blocks {
-    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Rubies.MODID);
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Rubies.MOD_ID);
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

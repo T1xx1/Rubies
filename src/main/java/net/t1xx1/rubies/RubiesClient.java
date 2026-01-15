@@ -7,8 +7,8 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 
-@Mod(value = Rubies.MODID, dist = Dist.CLIENT)
-@EventBusSubscriber(modid = Rubies.MODID, value = Dist.CLIENT)
+@Mod(value = Rubies.MOD_ID, dist = Dist.CLIENT)
+@EventBusSubscriber(modid = Rubies.MOD_ID, value = Dist.CLIENT)
 public class RubiesClient {
     public RubiesClient(ModContainer container) {
 

@@ -7,7 +7,7 @@ import net.t1xx1.rubies.item.Items;
 
 public class ItemModelProvider extends net.neoforged.neoforge.client.model.generators.ItemModelProvider {
     public ItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
-        super(output, Rubies.MODID, existingFileHelper);
+        super(output, Rubies.MOD_ID, existingFileHelper);
     }
 
     @Override

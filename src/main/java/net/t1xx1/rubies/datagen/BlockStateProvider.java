@@ -8,7 +8,7 @@ import net.t1xx1.rubies.block.Blocks;
 
 public class BlockStateProvider extends net.neoforged.neoforge.client.model.generators.BlockStateProvider {
     public BlockStateProvider(PackOutput packOutput, ExistingFileHelper existingFileHelper) {
-        super(packOutput, Rubies.MODID, existingFileHelper);
+        super(packOutput, Rubies.MOD_ID, existingFileHelper);
     }
 
     private void block(DeferredBlock<?> deferredBlock) {

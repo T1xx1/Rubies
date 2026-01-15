@@ -14,7 +14,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class BlockTagProvider extends BlockTagsProvider {
     public BlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
-        super(output, lookupProvider, Rubies.MODID, existingFileHelper);
+        super(output, lookupProvider, Rubies.MOD_ID, existingFileHelper);
     }
 
     public void mineableWithIronPickaxe(Block block) {

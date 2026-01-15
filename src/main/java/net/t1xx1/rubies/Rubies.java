@@ -13,9 +13,9 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.t1xx1.rubies.block.Blocks;
 import net.t1xx1.rubies.item.Items;
 
-@Mod(Rubies.MODID)
+@Mod(Rubies.MOD_ID)
 public class Rubies {
-    public static final String MODID = "rubies";
+    public static final String MOD_ID = "rubies";
 
     public Rubies(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);

@@ -9,7 +9,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.t1xx1.rubies.Rubies;
 
 public class Items {
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Rubies.MODID);
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Rubies.MOD_ID);
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

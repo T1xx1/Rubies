@@ -56,7 +56,7 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider im
                     .generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer, factory)
                     .group(pGroup)
                     .unlockedBy(getHasName(itemlike), has(itemlike))
-                    .save(recipeOutput, Rubies.MODID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
+                    .save(recipeOutput, Rubies.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
         }
     }
 }
