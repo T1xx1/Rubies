@@ -11,5 +11,7 @@
 
   "block.rubies.ruby_block": "Block of Ruby",
   "block.rubies.ruby_ore": "Ruby Ore",
-  "block.rubies.deepslate_ruby_ore": "Deepslate Ruby Ore"
+  "block.rubies.deepslate_ruby_ore": "Deepslate Ruby Ore",
+
+  "trim_material.rubies.ruby": "Ruby Material"
 }

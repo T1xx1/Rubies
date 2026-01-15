@@ -1,0 +1,9 @@
+{
+  "asset_name": "ruby",
+  "description": {
+    "color": "#A01136",
+    "translate": "trim_material.rubies.ruby"
+  },
+  "ingredient": "rubies:ruby",
+  "item_model_index": 0.4
+}
